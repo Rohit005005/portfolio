@@ -6,12 +6,12 @@ import { useInView } from "react-intersection-observer";
 import Link from "next/link";
 
 const boxVariant = {
-  visible: { x: 0, opacity: 1, transition: { duration: 0.5 } },
+  visible: { x: 0, opacity: 1, transition: { duration: 1 } },
   hidden: { x: -100, opacity: 0 },
 };
 
 const boxVariant2 = {
-  visible: { x: 0, opacity: 1, transition: { duration: 0.5 } },
+  visible: { x: 0, opacity: 1, transition: { duration: 1 } },
   hidden: { x: 100, opacity: 0 },
 };
 
@@ -35,8 +35,8 @@ const Box = ({ num }) => {
       initial="hidden"
       animate={control}
     >
-      <div className="flex justify-center gap-20">
-        <div className="shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)] rounded-full">
+      <div className="border-y-4 p-10 rounded-xl md:rounded-none md:p-0 border-neutral-300 md:border-opacity-0 flex flex-col md:flex-row justify-center gap-10">
+        <div className="shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)]">
           <Image
             src={"/formio.png"}
             width={300}
@@ -88,7 +88,7 @@ const Box2 = ({ num }) => {
       initial="hidden"
       animate={control}
     >
-      <div className="flex justify-center gap-20 mt-20">
+      <div className="border-y-4 p-10 rounded-xl md:rounded-none md:p-0 border-neutral-300 md:border-opacity-0 flex flex-col md:flex-row justify-center gap-10 mt-20">
         <div className=" shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] rounded-xl flex flex-col items-center justify-center  w-[300px] h-[400px]">
           <div className="text-neutral-100 text-3xl font-extrabold px-10 mt-5">
             PrePeak
@@ -106,7 +106,7 @@ const Box2 = ({ num }) => {
             Visit
           </button></Link>
         </div>
-        <div className="shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)] rounded-full">
+        <div className="shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)]">
           <Image
             src={"/preppeak.png"}
             width={300}

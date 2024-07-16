@@ -23,9 +23,9 @@ const container2 = (delay) => ({
 
 function Hero() {
   return (
-    <div className="flex justify-center items-center">
-      <div className="flex flex-col p-16 w-[50%]">
-        <div className="text-neutral-300 text-6xl font-extrabold mb-8">
+    <div className="flex flex-col md:flex-row justify-center items-center">
+      <div className="flex flex-col md:p-16 p-10 md:w-[50%]">
+        <div className="text-neutral-300 text-6xl font-extrabold mb-4 md:mb-8">
           <motion.h1 variants={container(0)} initial="hidden" animate="visible">
             Rohit
           </motion.h1>
@@ -34,7 +34,7 @@ function Hero() {
           variants={container(0.5)}
           initial="hidden"
           animate="visible"
-          className="font-extrabold text-transparent text-4xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 mb-10"
+          className="font-extrabold text-transparent text-4xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 md:mb-10 mb-4"
         >
           Full Stack Developer
         </motion.div>
