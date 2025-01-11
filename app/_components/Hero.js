@@ -2,7 +2,6 @@
 import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
-export const runtime = "edge";
 
 
 const container = (delay) => ({

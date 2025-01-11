@@ -4,7 +4,6 @@ import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Link from "next/link";
-export const runtime = "edge";
 
 
 const boxVariant = {
