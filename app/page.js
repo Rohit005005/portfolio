@@ -4,8 +4,6 @@ import Navbar from "./_components/Navbar";
 import Projects from "./_components/Projects";
 import Techno from "./_components/Techno";
 
-export const runtime = "edge";
-
 export default function Home() {
   return (
     <div>
